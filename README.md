@@ -8,7 +8,7 @@ Este proyecto consiste en una página web sencilla que muestra una cuadrícula d
 
 1. **Clona el repositorio o descarga los archivos:**
 
-   git clone https://github.com/jbortweb/galeria-grid.git
+   git clone [https://github.com/jbortweb/galeria-grid.git](https://github.com/jbortweb/galeria-grid)
    
 2. **Navega al directorio del proyecto:**
 
