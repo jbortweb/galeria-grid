@@ -4,6 +4,8 @@
 
 Este proyecto consiste en una página web sencilla que muestra una cuadrícula de imágenes utilizando **CSS Grid**. La cuadrícula está diseñada con tres columnas y dos filas, donde cada columna tiene diferentes proporciones de altura para las filas, creando un diseño visualmente atractivo y equilibrado.
 
+**Enlace al Proyecto:** [Galería Grid](https://github.com/jbortweb/galeria-grid)
+
 ## Instalación y Uso
 
 1. **Clona el repositorio o descarga los archivos:**
