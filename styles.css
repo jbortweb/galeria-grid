@@ -1,0 +1,60 @@
+/* Reiniciar márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el contenedor principal */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  width: 50%;
+  margin: 30px auto;
+  gap: 10px; /* Espacio entre columnas */
+  padding: 10px;
+}
+
+/* Estilos generales para cada columna */
+.column {
+  display: grid;
+  height: 100%;
+}
+
+/* Primera y tercera columna: 66% y 33% */
+.column1,
+.column3 {
+  grid-template-rows: 2fr 1fr; /* 2 partes y 1 parte */
+  gap: 10px;
+}
+
+/* Segunda columna: 33% y 66% */
+.column2 {
+  grid-template-rows: 1fr 2fr; /* 1 parte y 2 partes */
+  gap: 10px;
+}
+
+/* Estilos para las imágenes */
+.column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin distorsión */
+}
+
+/* Responsividad: Ajustar para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: repeat(3, 1fr); /* Tres filas */
+  }
+
+  .column {
+    grid-template-rows: 1fr; /* Cada columna ahora es una fila */
+  }
+
+  .column1,
+  .column2,
+  .column3 {
+    grid-template-rows: 1fr; /* Igual distribución */
+  }
+}
